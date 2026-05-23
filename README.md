@@ -1,176 +1,44 @@
-# 3D Portfolio Website
+# Apratim Das - Personal Portfolio
 
-This repository contains the source code for a personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It includes animated page sections, a character scene, custom cursor interactions, and smooth transitions designed for a modern portfolio experience.
+This is a high-performance, interactive 3D personal portfolio website built with React, Three.js, GSAP, and Tailwind CSS. The portfolio showcases technical expertise, creative design, and engineering projects with a futuristic, dark-themed UI.
 
-Live site: [https://akashrmalhotra.netlify.app/](https://akashrmalhotra.netlify.app/)
+## 🚀 Technical Stack
 
-![Portfolio Preview](public/images/preview1.png)
+### Core Technologies
+* **Framework:** React
+* **3D Engine:** Three.js, `@react-three/fiber`, `@react-three/drei`
+* **Animations:** GSAP (ScrollTrigger, Timeline)
+* **Styling:** Tailwind CSS / CSS Modules
+* **Build Tool:** Vite
 
-## Table of Contents
+### Key Features
+* **Interactive 3D Avatar:** Custom-rigged character model with real-time mouse/eye tracking.
+* **Physics Sandbox:** Interactive physics-based tech stack section using `react-three/rapier`.
+* **Scroll-based Animations:** GSAP-powered transitions and camera movements for immersive storytelling.
+* **Responsive Design:** Optimized layout for laptop and desktop resolutions with dynamic camera adjustment.
+* **Theme Customization:** High-contrast Electric Cyan (`#00F5FF`) and Charcoal theme with customized light emissions.
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Available Scripts](#available-scripts)
-- [GSAP License Note](#gsap-license-note)
-- [Customization Guide](#customization-guide)
-- [Troubleshooting](#troubleshooting)
-- [Deployment](#deployment)
-- [License](#license)
+## 👤 Profile
 
-## Features
+* **Name:** Apratim Das
+* **Affiliation:** Indian Institute of Technology (IIT), Dharwad
+* **Current Focus:** Electrical & Electronics Engineering (EEE)
+* **Interests:** Full Stack Development, Artificial Intelligence, Robotics, Interactive Web Experiences, and Engineering Systems.
 
-- Responsive one-page portfolio layout with reusable section components.
-- 3D character scene rendering powered by React Three Fiber and Three.js.
-- GSAP-powered animations and transitions for interactive storytelling.
-- Custom cursor, hover interactions, and scroll-driven visual effects.
-- Organized component architecture with dedicated utilities and style modules.
+## 🛠 Project Highlights
 
-## Tech Stack
+* **Nasiko HR Automation Agent:** AI-driven workflow automation.
+* **NeonFracture:** Creative coding and experimental UI components.
+* **ATLAS AI Coding Agent:** Context-aware agentic systems for developer productivity.
 
-### Core
+## 🌐 Connect
 
-- React 18
-- TypeScript
-- Vite
+* **GitHub:** [uncomparableX](https://github.com/uncomparableX)
+* **LinkedIn:** [/in/apratim-das](https://www.linkedin.com/in/apratim-das-82a043316/)
+* **Instagram:** [@apratimdasofficial](https://www.instagram.com/apratimdasofficial/)
 
-### Animation and 3D
+## 💡 Development Philosophy
+Built to bridge the gap between core engineering concepts and immersive digital experiences. The portfolio reflects a dedication to technical precision, high-quality visual output, and functional automation.
 
-- GSAP + `@gsap/react`
-- Three.js
-- `@react-three/fiber`
-- `@react-three/drei`
-- `@react-three/postprocessing`
-- `@react-three/cannon`
-- `@react-three/rapier`
-
-### Supporting Libraries
-
-- `react-icons`
-- `react-fast-marquee`
-- `@vercel/analytics`
-
-## Project Structure
-
-```text
-.
-├── public/                    # Static assets
-├── src/
-│   ├── assets/                # Local media/assets
-│   ├── components/
-│   │   ├── Character/         # 3D scene + character logic/utilities
-│   │   ├── styles/            # Section/component CSS files
-│   │   ├── About.tsx
-│   │   ├── Career.tsx
-│   │   ├── Contact.tsx
-│   │   ├── Landing.tsx
-│   │   ├── MainContainer.tsx  # Main page composition
-│   │   ├── Navbar.tsx
-│   │   ├── TechStack.tsx
-│   │   ├── WhatIDo.tsx
-│   │   └── Work.tsx
-│   ├── context/               # Global providers (loading state, etc.)
-│   ├── data/                  # Static data/content definitions
-│   ├── App.tsx
-│   └── main.tsx
-├── package.json
-└── vite.config.ts
-```
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ (recommended)
-- npm 9+ (or compatible)
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone <your-repository-url>
-   cd 3d-portfolio
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Start the local development server:
-
-   ```bash
-   npm run dev
-   ```
-
-4. Open the URL shown in the terminal (typically `http://localhost:5173`).
-
-## Available Scripts
-
-- `npm run dev`  
-  Starts Vite dev server and exposes host for local network testing.
-
-- `npm run build`  
-  Type-checks and builds a production-ready bundle.
-
-- `npm run preview`  
-  Serves the production build locally for verification.
-
-- `npm run lint`  
-  Runs ESLint checks across the project.
-
-## GSAP License Note
-
-This project uses the standard `gsap` package, including bonus plugins now available in the core package.
-
-- Install dependencies with `npm install`.
-- If migrating from older setups, remove `gsap-trial` from your project.
-
-Read official installation guidance here: [GSAP Installation Docs](https://gsap.com/docs/v3/Installation/)
-
-## Customization Guide
-
-You can adapt this portfolio to your own profile by updating the following areas:
-
-- **Content sections**: Edit files in `src/components/` such as `About.tsx`, `Career.tsx`, `WhatIDo.tsx`, and `Work.tsx`.
-- **Data source**: Update static values in files under `src/data/`.
-- **Styling**: Modify component styles in `src/components/styles/` and global styles in `src/index.css` / `src/App.css`.
-- **3D scene behavior**: Adjust scene logic in `src/components/Character/` and related utilities.
-- **Animations**: Tweak GSAP utilities under `src/components/utils/`.
-
-## Troubleshooting
-
-- **Blank screen in development**  
-  Check browser console for module import errors and verify all dependencies are installed.
-
-- **3D performance issues on low-end devices**  
-  Reduce scene complexity and post-processing effects in the character/scene utilities.
-
-- **GSAP plugin errors**  
-  Ensure you have the correct plugin package and license configuration for your target environment.
-
-- **TypeScript build failures**  
-  Run `npm run build` and address reported type errors before deploying.
-
-## Deployment
-
-1. Create a production build:
-
-   ```bash
-   npm run build
-   ```
-
-2. Validate locally:
-
-   ```bash
-   npm run preview
-   ```
-
-3. Deploy the generated `dist/` folder to your hosting provider (for example Vercel, Netlify, or Cloudflare Pages).
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+---
+*Developed with passion for engineering and innovation.*
