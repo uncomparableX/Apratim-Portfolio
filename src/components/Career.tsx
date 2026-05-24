@@ -21,7 +21,7 @@ const Career = () => {
               <h3>2024–28</h3>
             </div>
             <p>
-              Pursuing a B.Tech at IIT Dharwad with interests spanning software engineering, AI systems, automation, and product innovation beyond core electrical engineering. Passionate about building impactful solutions, leading teams in hackathons, and turning ideas into real-world products through technology and engineering.
+             Pursuing a B.Tech in EEE at IIT Dharwad with interests in software engineering, AI systems, robotics, automation, & product innovation beyond core electrical engineering. Passionate about building impactful solutions, leading teams in hackathons, and turning ideas into real world products through technology & engineering.
             </p>
           </div>
           <div className="career-info-box">
@@ -33,7 +33,7 @@ const Career = () => {
               <h3>Graduated</h3>
             </div>
             <p>
-              Developed a strong foundation in mathematics, physics, and computer science, which sparked an early interest in problem solving, technology, and innovation. Actively participated in hackathons and collaborative competitions, serving as team lead in multiple events and securing top positions through leadership and creative execution.
+             Developed a strong foundation in Physics, Chemistry, Mathematics, & Computer Science, developing early problem solving & analytical skills. Actively participated in science exhibitions and competitions, securing top positions through innovation, creativity, & execution.
             </p>
           </div>
         </div>
